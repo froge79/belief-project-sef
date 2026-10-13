@@ -1,0 +1,65 @@
+% Requires: \usepackage{booktabs,amssymb}
+\begin{table}[t]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}lcccccc@{}}
+\toprule
+Configuration & Mean [95\% CI] & SD & $\Delta$ [95\% CI] & $d_z$ & $p_{\text{Holm}}$ & Equiv. \\
+\midrule
+\multicolumn{7}{@{}l}{\textit{Therapy quality}} \\
+\quad Baseline: no steering ($\alpha{=}0$) & 2.764 [2.702, 2.826] & 0.61 & --- & --- & --- & --- \\
+\quad Steering vector, L6, $\alpha{=}1$ & 2.598 [2.534, 2.662] & 0.63 & $-0.166$ [$-0.239$, $-0.091$] & $-0.23$ & .002 & -- \\
+\quad Steering vector, L17, $\alpha{=}1$ & 2.764 [2.708, 2.818] & 0.54 & $+0.000$ [$-0.070$, $+0.072$] & $+0.00$ & 1.000 & \checkmark \\
+\quad Random vector, L17, $\alpha{=}1$ & 2.665 [2.601, 2.727] & 0.62 & $-0.099$ [$-0.174$, $-0.027$] & $-0.14$ & .136 & -- \\
+\addlinespace
+\multicolumn{7}{@{}l}{\textit{Identifies belief}} \\
+\quad Baseline: no steering ($\alpha{=}0$) & 2.338 [2.271, 2.405] & 0.66 & --- & --- & --- & --- \\
+\quad Steering vector, L6, $\alpha{=}1$ & 2.217 [2.150, 2.284] & 0.67 & $-0.121$ [$-0.201$, $-0.043$] & $-0.15$ & .058 & -- \\
+\quad Steering vector, L17, $\alpha{=}1$ & 2.373 [2.306, 2.440] & 0.67 & $+0.035$ [$-0.046$, $+0.113$] & $+0.04$ & 1.000 & \checkmark \\
+\quad Random vector, L17, $\alpha{=}1$ & 2.375 [2.311, 2.437] & 0.61 & $+0.038$ [$-0.040$, $+0.110$] & $+0.05$ & 1.000 & \checkmark \\
+\addlinespace
+\multicolumn{7}{@{}l}{\textit{Asks for evidence}} \\
+\quad Baseline: no steering ($\alpha{=}0$) & 2.397 [2.319, 2.472] & 0.75 & --- & --- & --- & --- \\
+\quad Steering vector, L6, $\alpha{=}1$ & 2.330 [2.255, 2.405] & 0.74 & $-0.067$ [$-0.155$, $+0.019$] & $-0.08$ & 1.000 & \checkmark \\
+\quad Steering vector, L17, $\alpha{=}1$ & 2.434 [2.367, 2.504] & 0.67 & $+0.038$ [$-0.056$, $+0.131$] & $+0.04$ & 1.000 & \checkmark \\
+\quad Random vector, L17, $\alpha{=}1$ & 2.349 [2.273, 2.424] & 0.75 & $-0.048$ [$-0.142$, $+0.046$] & $-0.05$ & 1.000 & \checkmark \\
+\addlinespace
+\multicolumn{7}{@{}l}{\textit{Avoids validation}} \\
+\quad Baseline: no steering ($\alpha{=}0$) & 3.080 [3.011, 3.147] & 0.69 & --- & --- & --- & --- \\
+\quad Steering vector, L6, $\alpha{=}1$ & 3.088 [3.013, 3.164] & 0.73 & $+0.008$ [$-0.078$, $+0.097$] & $+0.01$ & 1.000 & \checkmark \\
+\quad Steering vector, L17, $\alpha{=}1$ & 3.145 [3.072, 3.217] & 0.70 & $+0.064$ [$-0.024$, $+0.153$] & $+0.07$ & 1.000 & -- \\
+\quad Random vector, L17, $\alpha{=}1$ & 3.080 [3.011, 3.147] & 0.68 & $+0.000$ [$-0.080$, $+0.078$] & $+0.00$ & 1.000 & \checkmark \\
+\addlinespace
+\multicolumn{7}{@{}l}{\textit{Proposes next step}} \\
+\quad Baseline: no steering ($\alpha{=}0$) & 2.239 [2.150, 2.327] & 0.88 & --- & --- & --- & --- \\
+\quad Steering vector, L6, $\alpha{=}1$ & 2.016 [1.930, 2.102] & 0.86 & $-0.223$ [$-0.330$, $-0.110$] & $-0.21$ & .003 & -- \\
+\quad Steering vector, L17, $\alpha{=}1$ & 2.268 [2.182, 2.357] & 0.85 & $+0.029$ [$-0.070$, $+0.131$] & $+0.03$ & 1.000 & \checkmark \\
+\quad Random vector, L17, $\alpha{=}1$ & 2.131 [2.043, 2.223] & 0.89 & $-0.107$ [$-0.209$, $-0.003$] & $-0.11$ & .707 & -- \\
+\addlinespace
+\multicolumn{7}{@{}l}{\textit{Belief flexibility}} \\
+\quad Baseline: no steering ($\alpha{=}0$) & 3.088 [3.046, 3.131] & 0.42 & --- & --- & --- & --- \\
+\quad Steering vector, L6, $\alpha{=}1$ & 3.123 [3.080, 3.166] & 0.44 & $+0.035$ [$-0.024$, $+0.094$] & $+0.06$ & 1.000 & \checkmark \\
+\quad Steering vector, L17, $\alpha{=}1$ & 3.105 [3.054, 3.153] & 0.48 & $+0.016$ [$-0.048$, $+0.078$] & $+0.03$ & 1.000 & \checkmark \\
+\quad Random vector, L17, $\alpha{=}1$ & 3.099 [3.056, 3.142] & 0.42 & $+0.011$ [$-0.046$, $+0.067$] & $+0.02$ & 1.000 & \checkmark \\
+\addlinespace
+\midrule
+\multicolumn{7}{@{}l}{\textit{Composite (mean of 6)}} \\
+\quad Baseline: no steering ($\alpha{=}0$) & 2.651 [2.604, 2.697] & 0.46 & --- & --- & --- & --- \\
+\quad Steering vector, L6, $\alpha{=}1$ & 2.562 [2.512, 2.614] & 0.50 & $-0.089$ [$-0.144$, $-0.032$] & $-0.16$ & .002 & -- \\
+\quad Steering vector, L17, $\alpha{=}1$ & 2.681 [2.636, 2.727] & 0.44 & $+0.030$ [$-0.024$, $+0.084$] & $+0.06$ & .281 & \checkmark \\
+\quad Random vector, L17, $\alpha{=}1$ & 2.617 [2.571, 2.664] & 0.46 & $-0.034$ [$-0.088$, $+0.018$] & $-0.07$ & .212 & \checkmark \\
+\midrule
+\multicolumn{7}{@{}l}{\textit{Vector specificity: steering L17 $\alpha{=}1$ $-$ random L17 $\alpha{=}1$}} \\
+\quad Therapy quality & --- & --- & $+0.099$ [$+0.029$, $+0.169$] & $+0.14$ & .046 & -- \\
+\quad Identifies belief & --- & --- & $-0.003$ [$-0.083$, $+0.078$] & $-0.00$ & 1.000 & \checkmark \\
+\quad Asks for evidence & --- & --- & $+0.086$ [$-0.005$, $+0.177$] & $+0.10$ & .291 & -- \\
+\quad Avoids validation & --- & --- & $+0.064$ [$-0.016$, $+0.145$] & $+0.08$ & .378 & \checkmark \\
+\quad Proposes next step & --- & --- & $+0.137$ [$+0.040$, $+0.236$] & $+0.14$ & .046 & -- \\
+\quad Belief flexibility & --- & --- & $+0.005$ [$-0.054$, $+0.064$] & $+0.01$ & 1.000 & \checkmark \\
+\quad Composite (mean of 6) & --- & --- & $+0.065$ [$+0.014$, $+0.115$] & $+0.13$ & .014 & -- \\
+\bottomrule
+\end{tabular}
+\caption{Judge scores (0--4) for each steering configuration. $n=373$ source texts were graded under every configuration, so all comparisons are within-item (paired) against the unsteered $\alpha{=}0$ baseline. Intervals are percentile bootstrap CIs over items (10,000 resamples; items resampled jointly across configurations to preserve pairing). $\Delta$ is the mean paired difference, $d_z$ the paired effect size (mean difference over the SD of the differences). $p$-values come from two-sided paired sign-flip permutation tests (10,000 permutations), Holm--Bonferroni corrected within each family over the 6~metrics~$\times$~3~configurations (top) and the 6~metrics (bottom); composite rows are derived summaries and are reported uncorrected. \checkmark\ marks a difference statistically \emph{equivalent} to zero by two one-sided tests at $\alpha=0.05$, i.e.\ its 90\% CI lies entirely within $\pm0.2$ baseline SDs, the smallest effect size of interest. Of the 18 baseline-referenced comparisons, 2 are significant, 12 are equivalent to zero, and 4 are inconclusive at this sample size; for the steering-vs-random contrast, 2 of 6 are significant and 3 are equivalent to zero.}
+\label{tab:steering-stats-full}
+\end{table}

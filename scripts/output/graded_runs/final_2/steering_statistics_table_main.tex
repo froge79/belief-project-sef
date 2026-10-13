@@ -1,0 +1,26 @@
+% Compact main-text version. Requires: \usepackage{booktabs}
+% If too wide for one column: \setlength{\tabcolsep}{3pt}, drop to
+% \scriptsize, or promote to a full-width table*.
+\begin{table}[t]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+& Baseline & \multicolumn{3}{c}{$\Delta$ vs.\ baseline [95\% CI], $\alpha{=}1$} \\
+\cmidrule(l){3-5}
+Metric & $M$ (SD) & Steering L17 & Random L17 & Steering L6 \\
+\midrule
+Therapy quality & 2.76 (0.61) & $+0.00$ [$-0.07$, $+0.07$]$^{\equiv}$ & $-0.10$ [$-0.17$, $-0.03$] & $-0.17$ [$-0.24$, $-0.09$]$^{*}$ \\
+Identifies belief & 2.34 (0.66) & $+0.03$ [$-0.05$, $+0.11$]$^{\equiv}$ & $+0.04$ [$-0.04$, $+0.11$]$^{\equiv}$ & $-0.12$ [$-0.20$, $-0.04$] \\
+Asks for evidence & 2.40 (0.75) & $+0.04$ [$-0.06$, $+0.13$]$^{\equiv}$ & $-0.05$ [$-0.14$, $+0.05$]$^{\equiv}$ & $-0.07$ [$-0.16$, $+0.02$]$^{\equiv}$ \\
+Avoids validation & 3.08 (0.69) & $+0.06$ [$-0.02$, $+0.15$] & $+0.00$ [$-0.08$, $+0.08$]$^{\equiv}$ & $+0.01$ [$-0.08$, $+0.10$]$^{\equiv}$ \\
+Proposes next step & 2.24 (0.88) & $+0.03$ [$-0.07$, $+0.13$]$^{\equiv}$ & $-0.11$ [$-0.21$, $-0.00$] & $-0.22$ [$-0.33$, $-0.11$]$^{*}$ \\
+Belief flexibility & 3.09 (0.42) & $+0.02$ [$-0.05$, $+0.08$]$^{\equiv}$ & $+0.01$ [$-0.05$, $+0.07$]$^{\equiv}$ & $+0.03$ [$-0.02$, $+0.09$]$^{\equiv}$ \\
+\midrule
+\textbf{Composite} & 2.65 (0.46) & $+0.03$ [$-0.02$, $+0.08$]$^{\equiv}$ & $-0.03$ [$-0.09$, $+0.02$]$^{\equiv}$ & $-0.09$ [$-0.14$, $-0.03$]$^{*}$ \\
+\bottomrule
+\end{tabular}
+\caption{Judge scores (0--4). All configurations were graded on the same $n=373$ items, so every $\Delta$ is a within-item paired difference from the unsteered baseline; CIs are percentile bootstrap intervals over items (10,000 resamples). $^{*}$~significant under a two-sided paired sign-flip permutation test (10,000 permutations) after Holm correction across the 18~metric~$\times$~configuration comparisons; $^{\equiv}$~statistically \emph{equivalent} to zero (TOST, $\alpha=0.05$) within $\pm0.2$ baseline SDs; the composite is a derived summary and is tested uncorrected. No effect exceeds $|d_z|=0.23$; 12 of 18 comparisons are equivalent to zero and 2 are significant (both layer-6 degradations). Per-configuration means, SDs, $d_z$, and the steering-vs-random contrast are in Table~\ref{tab:steering-stats-full}.}
+\label{tab:steering-stats}
+\end{table}
